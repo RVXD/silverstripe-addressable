@@ -12,7 +12,7 @@ use SilverStripe\Forms\TextField;
 use SilverStripe\Forms\ReadonlyField;
 use SilverStripe\Forms\ToggleCompositeField;
 use SilverStripe\CMS\Model\SiteTree;
-use SilverStripe\ORM\DataExtension;
+use SilverStripe\Core\Extension;
 use SilverStripe\Core\Injector\Injector;
 
 /**
@@ -21,7 +21,7 @@ use SilverStripe\Core\Injector\Injector;
  *
  * @package silverstripe-addressable
  */
-class Geocodable extends DataExtension
+class Geocodable extends Extension
 {
     /**
      * @var Symbiote\Addressable\GeocodeServiceInterface

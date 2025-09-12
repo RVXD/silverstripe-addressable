@@ -8,7 +8,7 @@ use SilverStripe\Forms\TextField;
 use SilverStripe\Forms\HeaderField;
 use SilverStripe\Forms\DropdownField;
 use SilverStripe\i18n\Data\Intl\IntlLocales;
-use SilverStripe\ORM\DataExtension;
+use SilverStripe\Core\Extension;
 use Symbiote\Addressable\Forms\RegexTextField;
 use Dynamic\CountryDropdownField\Fields\CountryDropdownField;
 use SilverStripe\ORM\FieldType\DBHTMLText;
@@ -22,7 +22,7 @@ use Exception;
  *
  * @package silverstripe-addressable
  */
-class Addressable extends DataExtension
+class Addressable extends Extension
 {
     private static $db = [
         'Address' => 'Varchar(255)',

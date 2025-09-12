@@ -20,7 +20,7 @@
         }
     ],
     "require": {
-        "silverstripe/framework": "^4.12||^5",
+        "silverstripe/framework": "^6",
         "guzzlehttp/guzzle": "^7"
     },
     "require-dev": {
@@ -39,7 +39,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "5.2.x-dev"
+            "dev-master": "6.0.x-dev"
         }
     },
     "replace": {
