@@ -70,7 +70,7 @@ class Geocodable extends Extension
         }
 
         $address = $record->getFullAddress();
-        $region = strtolower($record->Country);
+        $region = strtolower($record->Country ?? '');
 
         $point = [];
         try {
